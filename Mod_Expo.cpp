@@ -1,7 +1,7 @@
-ll ModExpo(ll base, ll power, ll mod)
+int ModExpo(int base, int power, int mod)
 {
 	base %= mod;
-	ll result = 1;
+	int result = 1;
 	while(power > 0)
 	{
 		if(power & 1)result = (result * base) % mod;
